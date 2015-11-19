@@ -40,7 +40,8 @@
     	alert("Else Loop");
     	
 		
-		
+}
+}		
 		
 		
 		
@@ -177,8 +178,7 @@
 }
 }
 			});
-}
-}
+
     
     var globalVariable;			
      function success(uuid)		
