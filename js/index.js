@@ -1,5 +1,5 @@
 	$(document).ready(function(){
-		
+		alert("Doc Ready");
 	
     document.addEventListener("deviceready",onDeviceReady,false);     
 
