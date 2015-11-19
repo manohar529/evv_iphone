@@ -95,7 +95,7 @@
  function is_device_registered()
 {
 
-	var device_uuid = globalVariable;
+//	var device_uuid = globalVariable;
 	alert("For Device Value");
 	alert(device_uuid);
 	             $.ajax({
