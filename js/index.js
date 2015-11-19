@@ -1,12 +1,12 @@
 	$(document).ready(function(){
-		
+		alert("Doc Ready");
 	
     document.addEventListener("deviceready",onDeviceReady,false);     
 
 });
 	
 	function exit_app() {
-
+		alert("Exit App");
 		  navigator.app.exitApp();
 		}
 		 
@@ -21,9 +21,9 @@
 	 }
 */
 		function onDeviceReady() {
-		
+		alert("DR");
 			window.plugins.uniqueDeviceID.get(success, fail);
- 		var element = document.getElementById('deviceProperties');
+ 		//var element = document.getElementById('deviceProperties');
 		//var device_uuid = device.uuid;
        
  	var networkState = navigator.connection.type;
@@ -37,63 +37,18 @@
     }
     else
 {
+    	alert("Else Loop");
     	
-    	
 		
 		
 		
-		
-		
-		$.ajaxSetup({
-        xhrFields: {
-            withCredentials: true
-        }
-    });
-
-		$.ajax({
-          url:"http://183.82.96.212:8080/services/session/token",
-          type:"get",
-          dataType:"text",
-          crossDomain: true,
-          timeout: 20000,
-          error:function (jqXHR, textStatus, errorThrown) {
-        	  if(textStatus==="timeout") {
-        		  bootbox.dialog({
-        			  closeButton: false,
-        			  message: "Problem connecting with server. Please try after sometime.",
-        			  title: "Alert",
-        			  buttons: {
-        			    success: {
-        			      label: "OK",
-        			      className: "btn-danger",
-        			      callback: function() {
-        			    	  
-        			    	  exit_app();
-        			      }
-        			    
-        			    }
-        			    
-        			    
-        			  }
-        			});
-		        } 
-          },
-          success: function (token) {   
-		
-   	//var device_uuid = device.uuid;
-	//var d = document.getElementById("device_uuid");
-	var token =token;
-	var header = "X-CSRF-TOKEN";
-    $(document).ajaxSend(function(e, xhr, options) {
-        xhr.setRequestHeader(header, token);
-    });
-	
 	
 		
     		is_device_registered();
-   
+   alert("Before Custom Function");
  function is_device_registered()
 {
+		alert("Inside Custom Function");
 	var device_uuid = globalVariable;
 	alert("For Device Value");
 	alert(device_uuid);
@@ -110,7 +65,7 @@
 				  if(textStatus==="timeout") {
 					  bootbox.dialog({
 						  closeButton: false,
-	        			  message: "Problem connecting with server. Please try after sometime.",
+	        			  message: "Problem connecting with server. Please try after sometime..",
 	        			  title: "Alert",
 	        			  buttons: {
 	        			    success: {
@@ -129,8 +84,9 @@
 				  }
 			        
              bootbox.dialog({
+   
             	 closeButton: false,
-  message: "Problem connecting with server. Please try after sometime.",
+  message: "Problem connecting with server. Please try after sometime....",
   title: "Alert",
   buttons: {
     success: {
@@ -148,7 +104,7 @@
 });
               },
 	success: function (data) {
-							
+			alert("Success Ajax");				
 	//data.logindata[0].is_security_question_answered;
 	if(data.is_security_question_answered==1 && data.logindata[0].count>=1)
       {
@@ -171,17 +127,17 @@
 										  }
             });
 
-  return false;
+  //return false;
 
 }
+  		
 }
-			});
-}
-}
-    
+}  
     var globalVariable;			
      function success(uuid)		
-{		
+{
+	alert("Before uuid");
+	
     alert(uuid);		
    		
 		globalVariable=uuid;
