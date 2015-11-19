@@ -62,14 +62,13 @@
   </platform>
   <gap:plugin name="org.apache.cordova.core.camera" />
  
-<gap:plugin name="org.apache.cordova.core.geolocation" />
-<gap:plugin name="org.apache.cordova.core.dialogs" />
-<gap:plugin name="org.apache.cordova.device" />
-<gap:plugin name="org.apache.cordova.device-motion" />
-<gap:plugin name="org.apache.cordova.device-orientation" />
-<gap:plugin name="org.apache.cordova.network-information" />
-<gap:plugin name="org.apache.cordova.dialogs" />
-<gap:plugin name="org.apache.cordova.splashscreen" />
+<gap:plugin name="org.apache.cordova.device" source="pgb" version="0.3.0" />
+<gap:plugin name="org.apache.cordova.device-motion" source="pgb" version="0.2.11" />
+<gap:plugin name="org.apache.cordova.device-orientation" source="pgb" version="0.3.11" />
+<gap:plugin name="org.apache.cordova.dialogs" source="pgb" version="0.3.0" />
+<gap:plugin name="org.apache.cordova.network-information" source="pgb" version="0.2.15" />
+<gap:plugin name="org.apache.cordova.splashscreen" source="pgb" version="1.0.0" />
+
 //<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" />
 
 
