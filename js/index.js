@@ -94,6 +94,7 @@
    
  function is_device_registered()
 {
+	alert("Custom Function");
 	var device_uuid = globalVariable;
 	alert("For Device Value");
 	alert(device_uuid);
