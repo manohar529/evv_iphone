@@ -53,7 +53,9 @@
       
 
       	<gap:platform name="ios" />
-      	
+      	<gap:platform name="ios" />
+      	<gap:platform name="android" />
+      	<gap:platform name="winphone" />
 <gap:plugin name="org.apache.cordova.core.geolocation" />
 <gap:plugin name="org.apache.cordova.core.dialogs" />
 <gap:plugin name="org.apache.cordova.device" />
