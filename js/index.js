@@ -40,6 +40,8 @@
     	alert("Else Loop");
     	
 		
+}
+}		
 		
 		
 	
@@ -84,10 +86,10 @@
 				  }
 			        
              bootbox.dialog({
+  buttons: {
             	 closeButton: false,
   message: "Problem connecting with server. Please try after sometime....",
   title: "Alert",
-  buttons: {
     success: {
       label: "OK",
       className: "btn-danger",
@@ -129,9 +131,6 @@
   return false;
 
 }
-}
-}		
-
     
     var globalVariable;			
      function success(uuid)		
