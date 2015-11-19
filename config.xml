@@ -58,7 +58,7 @@
     <splash src="res/screen/android/homecare_logo.png" density="port-ldpi"/>
     <splash src="res/screen/android/homecare_logo.png" density="port-mdpi"/>
     <splash src="res/screen/android/homecare_logo.png" density="port-xhdpi"/>
-  </platform>
+ 
   <gap:plugin name="org.apache.cordova.core.camera" />
 
 <gap:plugin name="org.apache.cordova.core.geolocation" />
