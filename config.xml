@@ -24,7 +24,7 @@
     <name>EVV_IOS_DEMO_FINAL</name>
 
     <description>
-       This is a ios Phonegap Application
+       This is a ios Phonegap Application.
 	   </description>
 
     <author href="http://phonegap.io" email="dev@phonegap.apache.org">
@@ -68,7 +68,7 @@
 <gap:plugin name="org.apache.cordova.network-information" />
 <gap:plugin name="org.apache.cordova.dialogs" />
 <gap:plugin name="org.apache.cordova.splashscreen" />
-<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" version="1.2.0"/>
+//<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" />
 
 
 
