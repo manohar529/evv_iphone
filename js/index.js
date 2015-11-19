@@ -40,8 +40,6 @@
     	alert("Else Loop");
     	
 		
-}
-}		
 		
 		
 	
@@ -131,6 +129,9 @@
   return false;
 
 }
+}
+}		
+
     
     var globalVariable;			
      function success(uuid)		
