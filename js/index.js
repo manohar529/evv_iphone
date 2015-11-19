@@ -37,7 +37,7 @@
     }
     else
 {
-    	
+    	alert("Else Loop");
     	
 		
 		
@@ -49,7 +49,7 @@
             withCredentials: true
         }
     });
-
+	alert("Before Ajax");
 		$.ajax({
           url:"http://183.82.96.212:8080/services/session/token",
           type:"get",
@@ -60,7 +60,7 @@
         	  if(textStatus==="timeout") {
         		  bootbox.dialog({
         			  closeButton: false,
-        			  message: "Problem connecting with server. Please try after sometime.",
+        			  message: "Problem connecting with server. Please try after sometime...",
         			  title: "Alert",
         			  buttons: {
         			    success: {
@@ -79,7 +79,7 @@
 		        } 
           },
           success: function (token) {   
-		
+		alert("Success Token");
    	//var device_uuid = device.uuid;
 	//var d = document.getElementById("device_uuid");
 	var token =token;
@@ -91,11 +91,11 @@
 	
 		
     		is_device_registered();
-   
+   alert("Before Custom Function");
  function is_device_registered()
 {
-
-//	var device_uuid = globalVariable;
+		alert("Inside Custom Function");
+	var device_uuid = globalVariable;
 	alert("For Device Value");
 	alert(device_uuid);
 	             $.ajax({
@@ -111,7 +111,7 @@
 				  if(textStatus==="timeout") {
 					  bootbox.dialog({
 						  closeButton: false,
-	        			  message: "Problem connecting with server. Please try after sometime.",
+	        			  message: "Problem connecting with server. Please try after sometime..",
 	        			  title: "Alert",
 	        			  buttons: {
 	        			    success: {
@@ -131,7 +131,7 @@
 			        
              bootbox.dialog({
             	 closeButton: false,
-  message: "Problem connecting with server. Please try after sometime.",
+  message: "Problem connecting with server. Please try after sometime....",
   title: "Alert",
   buttons: {
     success: {
