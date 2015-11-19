@@ -90,7 +90,7 @@
 	
 	
 		
-    		is_device_registered();
+    	//	is_device_registered();
    
  function is_device_registered()
 {
