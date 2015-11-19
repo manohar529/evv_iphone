@@ -182,7 +182,9 @@
     
     var globalVariable;			
      function success(uuid)		
-{		
+{
+	alert("Before uuid");
+	
     alert(uuid);		
    		
 		globalVariable=uuid;
