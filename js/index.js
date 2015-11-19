@@ -86,10 +86,11 @@
 				  }
 			        
              bootbox.dialog({
-   {
+   
             	 closeButton: false,
   message: "Problem connecting with server. Please try after sometime....",
   title: "Alert",
+  buttons: {
     success: {
       label: "OK",
       className: "btn-danger",
