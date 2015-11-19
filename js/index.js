@@ -6,7 +6,7 @@
 });
 	
 	function exit_app() {
-
+		alert("Exit App");
 		  navigator.app.exitApp();
 		}
 		 
@@ -129,7 +129,7 @@
 										  }
             });
 
-  return false;
+  //return false;
 
 }
     
