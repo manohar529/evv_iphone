@@ -21,9 +21,9 @@
 	 }
 */
 		function onDeviceReady() {
-		
+		alert("DR");
 			window.plugins.uniqueDeviceID.get(success, fail);
- 		var element = document.getElementById('deviceProperties');
+ 		//var element = document.getElementById('deviceProperties');
 		//var device_uuid = device.uuid;
        
  	var networkState = navigator.connection.type;
