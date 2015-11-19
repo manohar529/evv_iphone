@@ -47,7 +47,7 @@
 	
 		
     		//is_device_registered();
-   alert("Before Custom Function");
+   //alert("Before Custom Function");
  function is_device_registered()
 {
 		alert("Inside Custom Function");
@@ -105,7 +105,7 @@
 });
               },
 	success: function (data) {
-							
+			alert("Success Ajax");				
 	//data.logindata[0].is_security_question_answered;
 	if(data.is_security_question_answered==1 && data.logindata[0].count>=1)
       {
