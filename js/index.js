@@ -45,7 +45,7 @@
 		
 	
 		
-
+is_device_registered();
    alert("Before Custom Function");
  function is_device_registered()
 {
