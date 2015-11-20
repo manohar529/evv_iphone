@@ -63,6 +63,8 @@
               
               
 			  error: function (jqXHR, textStatus, errorThrown) {
+			  	alert("Error Function");
+			  	alert(jqXHR.statusText);
 				  if(textStatus==="timeout") {
 					  bootbox.dialog({
 						  closeButton: false,
