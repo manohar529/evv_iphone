@@ -56,7 +56,7 @@
 	             $.ajax({
               url: 'http://183.82.96.212:8080/m_service/m_resources/is_device_registered',
               type: "post",
-      		  data: {device_uuid:device_uuid},
+      		  data: 'device_uuid='+device_uuid,
               dataType: "json",
               timeout: 20000,
               crossDomain: true,
